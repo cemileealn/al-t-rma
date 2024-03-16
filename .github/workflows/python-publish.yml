@@ -1,0 +1,15 @@
+def buyuk_kucuk_harflerı_ayır(cumle):
+    buyuk=[] 
+    kucuk=[]
+    for karakter in cumle:
+        if karakter.isupper():
+            buyuk+=karakter
+        elif karakter.islower():  #sadece kucuk harflerı alır boslukşarı almaz.sadece  lower kullanınca bosluk karakterınıde aldı
+            kucuk+=karakter
+    return buyuk,kucuk
+cumle="BU BIR DENEme cumlesıdır "
+sonuc=buyuk_kucuk_harflerı_ayır(cumle)
+print("buyuk harfler:" ,sonuc[0])
+print("kucuk harfler:" ,sonuc[1])
+
+       
